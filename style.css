@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0b1020;
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 30px;
+  text-align: center;
+  background: radial-gradient(circle at top, #1e1b4b, #0b1020);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 4.2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #8b5cf6, #22d3ee);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.objective {
+  max-width: 900px;
+  margin: 25px 0;
+  color: #c7d2fe;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 14px 36px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.35s ease;
+}
+
+.primary {
+  background: linear-gradient(135deg, #8b5cf6, #22d3ee);
+  color: white;
+}
+
+.outline {
+  border: 2px solid #8b5cf6;
+  color: #8b5cf6;
+}
+
+.btn:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(139,92,246,0.45);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 12%;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  color: #fde68a;
+  margin-bottom: 25px;
+}
+
+.sub {
+  margin-top: 40px;
+}
+
+/* CARDS */
+.card {
+  background: rgba(17,24,39,0.9);
+  padding: 30px;
+  border-radius: 22px;
+  margin-bottom: 30px;
+  transition: all 0.4s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(34,211,238,0.35);
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: linear-gradient(135deg, #020617, #1e293b);
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 8px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: linear-gradient(135deg, #8b5cf6, #22d3ee);
+  color: #020617;
+}
+
+/* LIST */
+.list li {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: #020617;
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.footer-links a {
+  margin: 0 12px;
+  color: #22d3ee;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #fde68a;
+}
+
+.copy {
+  margin-top: 15px;
+  color: #9ca3af;
+}
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  border: 2px solid transparent;
+}
+
+/* LinkedIn */
+.linkedin {
+  color: #0a66c2;
+  border-color: #0a66c2;
+}
+
+.linkedin:hover {
+  background: #0a66c2;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(10,102,194,0.4);
+}
+
+/* GitHub */
+.github {
+  color: #e5e7eb;
+  border-color: #e5e7eb;
+}
+
+.github:hover {
+  background: #e5e7eb;
+  color: #020617;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(229,231,235,0.35);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .name {
+    font-size: 2.8rem;
+  }
+  .section {
+    padding: 60px 8%;
+  }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
